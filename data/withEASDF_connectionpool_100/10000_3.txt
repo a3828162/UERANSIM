@@ -1,0 +1,223 @@
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 13000 -c 10000 -T 4 -d queries.txt -l 30
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Fri Oct 17 12:32:32 2025
+[Status] Stopping after 30.000000 seconds
+[Timeout] Query timed out: msg id 23258
+[Timeout] Query timed out: msg id 23259
+[Timeout] Query timed out: msg id 23260
+[Timeout] Query timed out: msg id 23261
+[Timeout] Query timed out: msg id 23262
+[Timeout] Query timed out: msg id 23263
+[Timeout] Query timed out: msg id 23264
+[Timeout] Query timed out: msg id 23265
+[Timeout] Query timed out: msg id 23266
+[Timeout] Query timed out: msg id 23267
+[Timeout] Query timed out: msg id 23268
+[Timeout] Query timed out: msg id 23269
+[Timeout] Query timed out: msg id 23270
+[Timeout] Query timed out: msg id 23271
+[Timeout] Query timed out: msg id 23272
+[Timeout] Query timed out: msg id 23273
+[Timeout] Query timed out: msg id 23274
+[Timeout] Query timed out: msg id 23275
+[Timeout] Query timed out: msg id 23276
+[Timeout] Query timed out: msg id 23277
+[Timeout] Query timed out: msg id 23278
+[Timeout] Query timed out: msg id 23279
+[Timeout] Query timed out: msg id 23280
+[Timeout] Query timed out: msg id 23281
+[Timeout] Query timed out: msg id 23282
+[Timeout] Query timed out: msg id 23258
+[Timeout] Query timed out: msg id 23259
+[Timeout] Query timed out: msg id 23260
+[Timeout] Query timed out: msg id 23261
+[Timeout] Query timed out: msg id 23262
+[Timeout] Query timed out: msg id 23263
+[Timeout] Query timed out: msg id 23264
+[Timeout] Query timed out: msg id 23265
+[Timeout] Query timed out: msg id 23266
+[Timeout] Query timed out: msg id 23267
+[Timeout] Query timed out: msg id 23268
+[Timeout] Query timed out: msg id 23269
+[Timeout] Query timed out: msg id 23270
+[Timeout] Query timed out: msg id 23271
+[Timeout] Query timed out: msg id 23272
+[Timeout] Query timed out: msg id 23273
+[Timeout] Query timed out: msg id 23274
+[Timeout] Query timed out: msg id 23275
+[Timeout] Query timed out: msg id 23276
+[Timeout] Query timed out: msg id 23277
+[Timeout] Query timed out: msg id 23278
+[Timeout] Query timed out: msg id 23279
+[Timeout] Query timed out: msg id 23280
+[Timeout] Query timed out: msg id 23258
+[Timeout] Query timed out: msg id 23259
+[Timeout] Query timed out: msg id 23260
+[Timeout] Query timed out: msg id 23261
+[Timeout] Query timed out: msg id 23262
+[Timeout] Query timed out: msg id 23263
+[Timeout] Query timed out: msg id 23264
+[Timeout] Query timed out: msg id 23265
+[Timeout] Query timed out: msg id 23266
+[Timeout] Query timed out: msg id 23267
+[Timeout] Query timed out: msg id 23268
+[Timeout] Query timed out: msg id 23269
+[Timeout] Query timed out: msg id 23270
+[Timeout] Query timed out: msg id 23271
+[Timeout] Query timed out: msg id 23272
+[Timeout] Query timed out: msg id 23273
+[Timeout] Query timed out: msg id 23274
+[Timeout] Query timed out: msg id 23275
+[Timeout] Query timed out: msg id 23276
+[Timeout] Query timed out: msg id 23277
+[Timeout] Query timed out: msg id 23278
+[Timeout] Query timed out: msg id 23279
+[Timeout] Query timed out: msg id 23280
+[Timeout] Query timed out: msg id 23281
+[Timeout] Query timed out: msg id 23282
+[Timeout] Query timed out: msg id 23281
+[Timeout] Query timed out: msg id 23282
+[Timeout] Query timed out: msg id 23259
+[Timeout] Query timed out: msg id 23260
+[Timeout] Query timed out: msg id 23261
+[Timeout] Query timed out: msg id 23262
+[Timeout] Query timed out: msg id 23263
+[Timeout] Query timed out: msg id 23264
+[Timeout] Query timed out: msg id 23265
+[Timeout] Query timed out: msg id 23266
+[Timeout] Query timed out: msg id 23267
+[Timeout] Query timed out: msg id 23268
+[Timeout] Query timed out: msg id 23269
+[Timeout] Query timed out: msg id 23270
+[Timeout] Query timed out: msg id 23271
+[Timeout] Query timed out: msg id 23272
+[Timeout] Query timed out: msg id 23273
+[Timeout] Query timed out: msg id 23274
+[Timeout] Query timed out: msg id 23275
+[Timeout] Query timed out: msg id 23276
+[Timeout] Query timed out: msg id 23277
+[Timeout] Query timed out: msg id 23278
+[Timeout] Query timed out: msg id 23279
+[Timeout] Query timed out: msg id 23280
+[Timeout] Query timed out: msg id 23281
+[Timeout] Query timed out: msg id 23282
+[Timeout] Query timed out: msg id 23283
+[Timeout] Query timed out: msg id 23283
+[Timeout] Query timed out: msg id 23284
+[Timeout] Query timed out: msg id 23285
+[Timeout] Query timed out: msg id 23286
+[Timeout] Query timed out: msg id 23287
+[Timeout] Query timed out: msg id 23283
+[Timeout] Query timed out: msg id 23284
+[Timeout] Query timed out: msg id 23288
+[Timeout] Query timed out: msg id 23289
+[Timeout] Query timed out: msg id 23290
+[Timeout] Query timed out: msg id 23291
+[Timeout] Query timed out: msg id 23292
+[Timeout] Query timed out: msg id 23293
+[Timeout] Query timed out: msg id 23294
+[Timeout] Query timed out: msg id 23295
+[Timeout] Query timed out: msg id 23296
+[Timeout] Query timed out: msg id 23297
+[Timeout] Query timed out: msg id 23298
+[Timeout] Query timed out: msg id 23299
+[Timeout] Query timed out: msg id 23300
+[Timeout] Query timed out: msg id 23301
+[Timeout] Query timed out: msg id 23302
+[Timeout] Query timed out: msg id 23303
+[Timeout] Query timed out: msg id 23304
+[Timeout] Query timed out: msg id 23284
+[Timeout] Query timed out: msg id 23285
+[Timeout] Query timed out: msg id 23305
+[Timeout] Query timed out: msg id 23306
+[Timeout] Query timed out: msg id 23307
+[Timeout] Query timed out: msg id 23286
+[Timeout] Query timed out: msg id 23287
+[Timeout] Query timed out: msg id 23288
+[Timeout] Query timed out: msg id 23289
+[Timeout] Query timed out: msg id 23283
+[Timeout] Query timed out: msg id 23284
+[Timeout] Query timed out: msg id 23285
+[Timeout] Query timed out: msg id 23286
+[Timeout] Query timed out: msg id 23287
+[Timeout] Query timed out: msg id 23288
+[Timeout] Query timed out: msg id 23289
+[Timeout] Query timed out: msg id 23290
+[Timeout] Query timed out: msg id 23291
+[Timeout] Query timed out: msg id 23290
+[Timeout] Query timed out: msg id 23291
+[Timeout] Query timed out: msg id 23292
+[Timeout] Query timed out: msg id 23293
+[Timeout] Query timed out: msg id 23294
+[Timeout] Query timed out: msg id 23295
+[Timeout] Query timed out: msg id 23296
+[Timeout] Query timed out: msg id 23297
+[Timeout] Query timed out: msg id 23298
+[Timeout] Query timed out: msg id 23299
+[Timeout] Query timed out: msg id 23300
+[Timeout] Query timed out: msg id 23301
+[Timeout] Query timed out: msg id 23292
+[Timeout] Query timed out: msg id 23293
+[Timeout] Query timed out: msg id 23294
+[Timeout] Query timed out: msg id 23295
+[Timeout] Query timed out: msg id 23296
+[Timeout] Query timed out: msg id 23297
+[Timeout] Query timed out: msg id 23298
+[Timeout] Query timed out: msg id 23299
+[Timeout] Query timed out: msg id 23300
+[Timeout] Query timed out: msg id 23301
+[Timeout] Query timed out: msg id 23302
+[Timeout] Query timed out: msg id 23303
+[Timeout] Query timed out: msg id 23304
+[Timeout] Query timed out: msg id 23305
+[Timeout] Query timed out: msg id 23306
+[Timeout] Query timed out: msg id 23307
+[Timeout] Query timed out: msg id 23285
+[Timeout] Query timed out: msg id 23286
+[Timeout] Query timed out: msg id 23287
+[Timeout] Query timed out: msg id 23288
+[Timeout] Query timed out: msg id 23289
+[Timeout] Query timed out: msg id 23290
+[Timeout] Query timed out: msg id 23291
+[Timeout] Query timed out: msg id 23292
+[Timeout] Query timed out: msg id 23293
+[Timeout] Query timed out: msg id 23294
+[Timeout] Query timed out: msg id 23295
+[Timeout] Query timed out: msg id 23296
+[Timeout] Query timed out: msg id 23297
+[Timeout] Query timed out: msg id 23298
+[Timeout] Query timed out: msg id 23299
+[Timeout] Query timed out: msg id 23300
+[Timeout] Query timed out: msg id 23301
+[Timeout] Query timed out: msg id 23302
+[Timeout] Query timed out: msg id 23303
+[Timeout] Query timed out: msg id 23304
+[Timeout] Query timed out: msg id 23305
+[Timeout] Query timed out: msg id 23306
+[Timeout] Query timed out: msg id 23307
+[Timeout] Query timed out: msg id 23308
+[Timeout] Query timed out: msg id 23302
+[Timeout] Query timed out: msg id 23303
+[Timeout] Query timed out: msg id 23304
+[Timeout] Query timed out: msg id 23305
+[Timeout] Query timed out: msg id 23306
+[Timeout] Query timed out: msg id 23307
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         332777
+  Queries completed:    332577 (99.94%)
+  Queries lost:         200 (0.06%)
+
+  Response codes:       NOERROR 332577 (100.00%)
+  Average packet size:  request 26, response 50
+  Run time (s):         30.018276
+  Queries per second:   11079.150581
+
+  Average Latency (s):  0.005066 (min 0.000698, max 0.027163)
+  Latency StdDev (s):   0.002719
+

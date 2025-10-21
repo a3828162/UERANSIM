@@ -1,0 +1,1320 @@
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:35 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.000316
+  Queries per second:   0.999684
+
+  Average Latency (s):  0.004581 (min 0.004581, max 0.004581)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:36 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.002850
+  Queries per second:   0.997158
+
+  Average Latency (s):  0.002627 (min 0.002627, max 0.002627)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:37 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.003132
+  Queries per second:   0.996878
+
+  Average Latency (s):  0.001593 (min 0.001593, max 0.001593)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:38 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.004532
+  Queries per second:   0.995488
+
+  Average Latency (s):  0.002519 (min 0.002519, max 0.002519)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:39 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.000768
+  Queries per second:   0.999233
+
+  Average Latency (s):  0.001573 (min 0.001573, max 0.001573)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:40 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.005806
+  Queries per second:   0.994228
+
+  Average Latency (s):  0.002378 (min 0.002378, max 0.002378)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:41 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.000629
+  Queries per second:   0.999371
+
+  Average Latency (s):  0.001791 (min 0.001791, max 0.001791)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:42 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.012242
+  Queries per second:   0.987906
+
+  Average Latency (s):  0.001777 (min 0.001777, max 0.001777)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:43 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.019573
+  Queries per second:   0.980803
+
+  Average Latency (s):  0.001940 (min 0.001940, max 0.001940)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:44 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.000850
+  Queries per second:   0.999151
+
+  Average Latency (s):  0.002212 (min 0.002212, max 0.002212)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:45 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.004420
+  Queries per second:   0.995599
+
+  Average Latency (s):  0.001762 (min 0.001762, max 0.001762)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:46 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.001906
+  Queries per second:   0.998098
+
+  Average Latency (s):  0.001740 (min 0.001740, max 0.001740)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:47 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.041459
+  Queries per second:   0.960191
+
+  Average Latency (s):  0.001817 (min 0.001817, max 0.001817)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:48 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.011311
+  Queries per second:   0.988816
+
+  Average Latency (s):  0.002575 (min 0.002575, max 0.002575)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:49 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.000853
+  Queries per second:   0.999148
+
+  Average Latency (s):  0.002472 (min 0.002472, max 0.002472)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:50 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.028267
+  Queries per second:   0.972510
+
+  Average Latency (s):  0.001871 (min 0.001871, max 0.001871)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:51 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.002006
+  Queries per second:   0.997998
+
+  Average Latency (s):  0.001351 (min 0.001351, max 0.001351)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:52 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.003069
+  Queries per second:   0.996940
+
+  Average Latency (s):  0.001366 (min 0.001366, max 0.001366)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:53 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.002389
+  Queries per second:   0.997617
+
+  Average Latency (s):  0.001445 (min 0.001445, max 0.001445)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:54 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.000493
+  Queries per second:   0.999507
+
+  Average Latency (s):  0.001730 (min 0.001730, max 0.001730)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:55 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.023031
+  Queries per second:   0.977487
+
+  Average Latency (s):  0.003489 (min 0.003489, max 0.003489)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:56 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.001527
+  Queries per second:   0.998475
+
+  Average Latency (s):  0.001710 (min 0.001710, max 0.001710)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:57 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.005022
+  Queries per second:   0.995003
+
+  Average Latency (s):  0.002780 (min 0.002780, max 0.002780)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:58 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.000665
+  Queries per second:   0.999335
+
+  Average Latency (s):  0.001426 (min 0.001426, max 0.001426)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:52:59 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.014561
+  Queries per second:   0.985648
+
+  Average Latency (s):  0.002228 (min 0.002228, max 0.002228)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:00 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.002035
+  Queries per second:   0.997969
+
+  Average Latency (s):  0.001582 (min 0.001582, max 0.001582)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:02 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.000142
+  Queries per second:   0.999858
+
+  Average Latency (s):  0.001754 (min 0.001754, max 0.001754)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:03 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.004542
+  Queries per second:   0.995479
+
+  Average Latency (s):  0.002447 (min 0.002447, max 0.002447)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:04 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.014755
+  Queries per second:   0.985460
+
+  Average Latency (s):  0.002080 (min 0.002080, max 0.002080)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:05 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.002934
+  Queries per second:   0.997075
+
+  Average Latency (s):  0.001787 (min 0.001787, max 0.001787)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:06 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.009227
+  Queries per second:   0.990857
+
+  Average Latency (s):  0.001991 (min 0.001991, max 0.001991)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:07 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.002206
+  Queries per second:   0.997799
+
+  Average Latency (s):  0.001844 (min 0.001844, max 0.001844)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:08 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.004809
+  Queries per second:   0.995214
+
+  Average Latency (s):  0.001616 (min 0.001616, max 0.001616)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:09 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.022617
+  Queries per second:   0.977883
+
+  Average Latency (s):  0.001640 (min 0.001640, max 0.001640)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:10 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.012032
+  Queries per second:   0.988111
+
+  Average Latency (s):  0.001910 (min 0.001910, max 0.001910)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:11 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.035691
+  Queries per second:   0.965539
+
+  Average Latency (s):  0.001753 (min 0.001753, max 0.001753)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:12 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.015765
+  Queries per second:   0.984480
+
+  Average Latency (s):  0.002655 (min 0.002655, max 0.002655)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:13 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.002110
+  Queries per second:   0.997894
+
+  Average Latency (s):  0.001997 (min 0.001997, max 0.001997)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:14 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.009757
+  Queries per second:   0.990337
+
+  Average Latency (s):  0.002109 (min 0.002109, max 0.002109)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:15 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.011034
+  Queries per second:   0.989086
+
+  Average Latency (s):  0.002491 (min 0.002491, max 0.002491)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:16 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.005684
+  Queries per second:   0.994348
+
+  Average Latency (s):  0.001924 (min 0.001924, max 0.001924)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:17 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.003043
+  Queries per second:   0.996966
+
+  Average Latency (s):  0.001529 (min 0.001529, max 0.001529)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:18 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.000743
+  Queries per second:   0.999258
+
+  Average Latency (s):  0.002154 (min 0.002154, max 0.002154)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:19 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.003441
+  Queries per second:   0.996571
+
+  Average Latency (s):  0.002109 (min 0.002109, max 0.002109)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:20 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.016317
+  Queries per second:   0.983945
+
+  Average Latency (s):  0.002864 (min 0.002864, max 0.002864)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:21 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.004794
+  Queries per second:   0.995229
+
+  Average Latency (s):  0.001946 (min 0.001946, max 0.001946)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:22 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.023204
+  Queries per second:   0.977322
+
+  Average Latency (s):  0.001901 (min 0.001901, max 0.001901)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:23 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.003902
+  Queries per second:   0.996113
+
+  Average Latency (s):  0.001995 (min 0.001995, max 0.001995)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:24 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.009283
+  Queries per second:   0.990802
+
+  Average Latency (s):  0.001752 (min 0.001752, max 0.001752)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:25 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.020491
+  Queries per second:   0.979920
+
+  Average Latency (s):  0.001894 (min 0.001894, max 0.001894)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:26 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.007570
+  Queries per second:   0.992487
+
+  Average Latency (s):  0.002072 (min 0.002072, max 0.002072)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:27 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.000746
+  Queries per second:   0.999255
+
+  Average Latency (s):  0.002270 (min 0.002270, max 0.002270)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:28 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.004588
+  Queries per second:   0.995433
+
+  Average Latency (s):  0.001548 (min 0.001548, max 0.001548)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:29 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.014351
+  Queries per second:   0.985852
+
+  Average Latency (s):  0.001571 (min 0.001571, max 0.001571)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:30 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.017707
+  Queries per second:   0.982601
+
+  Average Latency (s):  0.002201 (min 0.002201, max 0.002201)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:31 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.009866
+  Queries per second:   0.990230
+
+  Average Latency (s):  0.001923 (min 0.001923, max 0.001923)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:32 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.033449
+  Queries per second:   0.967634
+
+  Average Latency (s):  0.002000 (min 0.002000, max 0.002000)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:33 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.006752
+  Queries per second:   0.993293
+
+  Average Latency (s):  0.001446 (min 0.001446, max 0.001446)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:34 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.007900
+  Queries per second:   0.992162
+
+  Average Latency (s):  0.001922 (min 0.001922, max 0.001922)
+
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 1 -d queries.txt -l 1
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Mon Oct 20 20:53:35 2025
+[Status] Stopping after 1.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         1
+  Queries completed:    1 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 1 (100.00%)
+  Average packet size:  request 30, response 58
+  Run time (s):         1.004954
+  Queries per second:   0.995070
+
+  Average Latency (s):  0.002154 (min 0.002154, max 0.002154)
+

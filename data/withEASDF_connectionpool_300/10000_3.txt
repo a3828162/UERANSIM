@@ -1,0 +1,223 @@
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 13000 -c 10000 -T 4 -d queries.txt -l 30
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Fri Oct 17 03:44:07 2025
+[Status] Stopping after 30.000000 seconds
+[Timeout] Query timed out: msg id 20063
+[Timeout] Query timed out: msg id 20064
+[Timeout] Query timed out: msg id 20065
+[Timeout] Query timed out: msg id 20066
+[Timeout] Query timed out: msg id 20067
+[Timeout] Query timed out: msg id 20068
+[Timeout] Query timed out: msg id 20069
+[Timeout] Query timed out: msg id 20070
+[Timeout] Query timed out: msg id 20071
+[Timeout] Query timed out: msg id 20072
+[Timeout] Query timed out: msg id 20073
+[Timeout] Query timed out: msg id 20074
+[Timeout] Query timed out: msg id 20075
+[Timeout] Query timed out: msg id 20076
+[Timeout] Query timed out: msg id 20077
+[Timeout] Query timed out: msg id 20078
+[Timeout] Query timed out: msg id 20079
+[Timeout] Query timed out: msg id 20080
+[Timeout] Query timed out: msg id 20081
+[Timeout] Query timed out: msg id 20082
+[Timeout] Query timed out: msg id 20083
+[Timeout] Query timed out: msg id 20084
+[Timeout] Query timed out: msg id 20085
+[Timeout] Query timed out: msg id 20086
+[Timeout] Query timed out: msg id 20087
+[Timeout] Query timed out: msg id 20062
+[Timeout] Query timed out: msg id 20063
+[Timeout] Query timed out: msg id 20064
+[Timeout] Query timed out: msg id 20065
+[Timeout] Query timed out: msg id 20066
+[Timeout] Query timed out: msg id 20067
+[Timeout] Query timed out: msg id 20068
+[Timeout] Query timed out: msg id 20069
+[Timeout] Query timed out: msg id 20070
+[Timeout] Query timed out: msg id 20071
+[Timeout] Query timed out: msg id 20072
+[Timeout] Query timed out: msg id 20073
+[Timeout] Query timed out: msg id 20074
+[Timeout] Query timed out: msg id 20075
+[Timeout] Query timed out: msg id 20076
+[Timeout] Query timed out: msg id 20077
+[Timeout] Query timed out: msg id 20078
+[Timeout] Query timed out: msg id 20079
+[Timeout] Query timed out: msg id 20080
+[Timeout] Query timed out: msg id 20081
+[Timeout] Query timed out: msg id 20082
+[Timeout] Query timed out: msg id 20083
+[Timeout] Query timed out: msg id 20084
+[Timeout] Query timed out: msg id 20085
+[Timeout] Query timed out: msg id 20086
+[Timeout] Query timed out: msg id 20062
+[Timeout] Query timed out: msg id 20063
+[Timeout] Query timed out: msg id 20064
+[Timeout] Query timed out: msg id 20065
+[Timeout] Query timed out: msg id 20066
+[Timeout] Query timed out: msg id 20067
+[Timeout] Query timed out: msg id 20068
+[Timeout] Query timed out: msg id 20069
+[Timeout] Query timed out: msg id 20070
+[Timeout] Query timed out: msg id 20071
+[Timeout] Query timed out: msg id 20072
+[Timeout] Query timed out: msg id 20073
+[Timeout] Query timed out: msg id 20074
+[Timeout] Query timed out: msg id 20075
+[Timeout] Query timed out: msg id 20076
+[Timeout] Query timed out: msg id 20077
+[Timeout] Query timed out: msg id 20078
+[Timeout] Query timed out: msg id 20079
+[Timeout] Query timed out: msg id 20080
+[Timeout] Query timed out: msg id 20081
+[Timeout] Query timed out: msg id 20082
+[Timeout] Query timed out: msg id 20083
+[Timeout] Query timed out: msg id 20084
+[Timeout] Query timed out: msg id 20085
+[Timeout] Query timed out: msg id 20086
+[Timeout] Query timed out: msg id 20062
+[Timeout] Query timed out: msg id 20064
+[Timeout] Query timed out: msg id 20065
+[Timeout] Query timed out: msg id 20066
+[Timeout] Query timed out: msg id 20067
+[Timeout] Query timed out: msg id 20068
+[Timeout] Query timed out: msg id 20069
+[Timeout] Query timed out: msg id 20070
+[Timeout] Query timed out: msg id 20071
+[Timeout] Query timed out: msg id 20072
+[Timeout] Query timed out: msg id 20073
+[Timeout] Query timed out: msg id 20074
+[Timeout] Query timed out: msg id 20075
+[Timeout] Query timed out: msg id 20076
+[Timeout] Query timed out: msg id 20077
+[Timeout] Query timed out: msg id 20078
+[Timeout] Query timed out: msg id 20079
+[Timeout] Query timed out: msg id 20080
+[Timeout] Query timed out: msg id 20081
+[Timeout] Query timed out: msg id 20082
+[Timeout] Query timed out: msg id 20083
+[Timeout] Query timed out: msg id 20084
+[Timeout] Query timed out: msg id 20085
+[Timeout] Query timed out: msg id 20086
+[Timeout] Query timed out: msg id 20087
+[Timeout] Query timed out: msg id 20087
+[Timeout] Query timed out: msg id 20088
+[Timeout] Query timed out: msg id 20089
+[Timeout] Query timed out: msg id 20090
+[Timeout] Query timed out: msg id 20091
+[Timeout] Query timed out: msg id 20092
+[Timeout] Query timed out: msg id 20093
+[Timeout] Query timed out: msg id 20094
+[Timeout] Query timed out: msg id 20095
+[Timeout] Query timed out: msg id 20096
+[Timeout] Query timed out: msg id 20097
+[Timeout] Query timed out: msg id 20098
+[Timeout] Query timed out: msg id 20099
+[Timeout] Query timed out: msg id 20100
+[Timeout] Query timed out: msg id 20101
+[Timeout] Query timed out: msg id 20102
+[Timeout] Query timed out: msg id 20103
+[Timeout] Query timed out: msg id 20104
+[Timeout] Query timed out: msg id 20105
+[Timeout] Query timed out: msg id 20106
+[Timeout] Query timed out: msg id 20107
+[Timeout] Query timed out: msg id 20108
+[Timeout] Query timed out: msg id 20109
+[Timeout] Query timed out: msg id 20110
+[Timeout] Query timed out: msg id 20111
+[Timeout] Query timed out: msg id 20088
+[Timeout] Query timed out: msg id 20089
+[Timeout] Query timed out: msg id 20090
+[Timeout] Query timed out: msg id 20091
+[Timeout] Query timed out: msg id 20092
+[Timeout] Query timed out: msg id 20093
+[Timeout] Query timed out: msg id 20094
+[Timeout] Query timed out: msg id 20095
+[Timeout] Query timed out: msg id 20096
+[Timeout] Query timed out: msg id 20097
+[Timeout] Query timed out: msg id 20098
+[Timeout] Query timed out: msg id 20099
+[Timeout] Query timed out: msg id 20100
+[Timeout] Query timed out: msg id 20101
+[Timeout] Query timed out: msg id 20102
+[Timeout] Query timed out: msg id 20103
+[Timeout] Query timed out: msg id 20104
+[Timeout] Query timed out: msg id 20105
+[Timeout] Query timed out: msg id 20106
+[Timeout] Query timed out: msg id 20107
+[Timeout] Query timed out: msg id 20108
+[Timeout] Query timed out: msg id 20109
+[Timeout] Query timed out: msg id 20110
+[Timeout] Query timed out: msg id 20111
+[Timeout] Query timed out: msg id 20112
+[Timeout] Query timed out: msg id 20088
+[Timeout] Query timed out: msg id 20089
+[Timeout] Query timed out: msg id 20090
+[Timeout] Query timed out: msg id 20091
+[Timeout] Query timed out: msg id 20092
+[Timeout] Query timed out: msg id 20093
+[Timeout] Query timed out: msg id 20087
+[Timeout] Query timed out: msg id 20088
+[Timeout] Query timed out: msg id 20089
+[Timeout] Query timed out: msg id 20090
+[Timeout] Query timed out: msg id 20091
+[Timeout] Query timed out: msg id 20092
+[Timeout] Query timed out: msg id 20093
+[Timeout] Query timed out: msg id 20094
+[Timeout] Query timed out: msg id 20095
+[Timeout] Query timed out: msg id 20096
+[Timeout] Query timed out: msg id 20097
+[Timeout] Query timed out: msg id 20098
+[Timeout] Query timed out: msg id 20099
+[Timeout] Query timed out: msg id 20100
+[Timeout] Query timed out: msg id 20101
+[Timeout] Query timed out: msg id 20102
+[Timeout] Query timed out: msg id 20103
+[Timeout] Query timed out: msg id 20104
+[Timeout] Query timed out: msg id 20105
+[Timeout] Query timed out: msg id 20106
+[Timeout] Query timed out: msg id 20107
+[Timeout] Query timed out: msg id 20108
+[Timeout] Query timed out: msg id 20109
+[Timeout] Query timed out: msg id 20110
+[Timeout] Query timed out: msg id 20111
+[Timeout] Query timed out: msg id 20094
+[Timeout] Query timed out: msg id 20095
+[Timeout] Query timed out: msg id 20096
+[Timeout] Query timed out: msg id 20097
+[Timeout] Query timed out: msg id 20098
+[Timeout] Query timed out: msg id 20099
+[Timeout] Query timed out: msg id 20100
+[Timeout] Query timed out: msg id 20101
+[Timeout] Query timed out: msg id 20102
+[Timeout] Query timed out: msg id 20103
+[Timeout] Query timed out: msg id 20104
+[Timeout] Query timed out: msg id 20105
+[Timeout] Query timed out: msg id 20106
+[Timeout] Query timed out: msg id 20107
+[Timeout] Query timed out: msg id 20108
+[Timeout] Query timed out: msg id 20109
+[Timeout] Query timed out: msg id 20110
+[Timeout] Query timed out: msg id 20111
+[Timeout] Query timed out: msg id 20112
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         390000
+  Queries completed:    389800 (99.95%)
+  Queries lost:         200 (0.05%)
+
+  Response codes:       NOERROR 389800 (100.00%)
+  Average packet size:  request 26, response 50
+  Run time (s):         30.002151
+  Queries per second:   12992.401778
+
+  Average Latency (s):  0.003219 (min 0.000424, max 0.023817)
+  Latency StdDev (s):   0.001674
+

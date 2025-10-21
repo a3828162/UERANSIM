@@ -1,0 +1,23 @@
+DNS Performance Testing Tool
+Version 2.9.0
+
+[Status] Command line: dnsperf -s 192.168.56.110 -p 53 -Q 19500 -c 15000 -T 4 -d queries.txt -l 30
+[Status] Sending queries (to 192.168.56.110:53)
+[Status] Started at: Fri Oct 17 01:41:57 2025
+[Status] Stopping after 30.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         343145
+  Queries completed:    343145 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 343145 (100.00%)
+  Average packet size:  request 26, response 50
+  Run time (s):         30.183017
+  Queries per second:   11368.810480
+
+  Average Latency (s):  0.007967 (min 0.001009, max 0.191841)
+  Latency StdDev (s):   0.004798
+
