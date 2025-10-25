@@ -1,6 +1,6 @@
 #!/bin/bash
 
-res=$(dig @192.168.56.110 hhhh.com +short)
+res=$(dig @192.168.56.110 vrstream.com +short)
 
 echo "dns query response:$res"
 echo "ue:$1"
