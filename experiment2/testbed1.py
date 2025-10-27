@@ -36,7 +36,7 @@ def task(ue_name, arrival_time, ue_ip):
         print(f"[ERROR] {ue_name} failed to launch: {e}")
 
     # 模擬運行 30 秒
-    time.sleep(30)
+    time.sleep(250)
     print(f"[{ue_name}] Starting termination and cleanup.")
 
     # 呼叫 delete_server_ue.sh
@@ -78,7 +78,7 @@ if __name__ == "__main__":
 
     # 啟動最多 6 個 UE
     threads = []
-    for i in range(min(1, len(df))):
+    for i in range(min(6, len(df))):
         row = df.iloc[i]
         ue_name = row['ue_id']
         arrival_time = row['t_arrive']

@@ -21,10 +21,10 @@ for edge in "${!EDGES[@]}"; do
   echo "🚀 Syncing from $edge ($host)"
   echo "=============================="
 
-  mkdir -p "${LOCAL_BASE}/${edge}"
+  mkdir -p "${LOCAL_BASE}"
 
   # 1️⃣ 用 rsync 同步遠端 → 本地（會覆蓋同名檔案）
-  rsync -avz --progress ${REMOTE_USER}@${host}:${REMOTE_BASE}/${edge}/ ${LOCAL_BASE}/${edge}/
+  rsync -avz --progress ${REMOTE_USER}@${host}:${REMOTE_BASE}/${edge}/ ${LOCAL_BASE}/
 
   # 2️⃣ 清空遠端內容（但保留 edge 資料夾本身）
   ssh ${REMOTE_USER}@${host} "find ${REMOTE_BASE}/${edge} -mindepth 1 -delete"
