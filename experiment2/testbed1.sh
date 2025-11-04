@@ -1,6 +1,6 @@
 #!/bin/bash
 
-res=$(./nr-binder $2 dig @192.168.56.110 vrstream.com +short)
+res=$(./nr-binder $2 dig @192.168.56.110 vrstream.com +short +time=10)
 # res=192.168.113.70
 
 echo -e "dns query response:\n$res"

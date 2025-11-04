@@ -10,6 +10,17 @@ plt.rcParams['font.size'] = 11
 # 讀取數據
 df = pd.read_csv('dns_statistics_summary.csv')
 
+# 移除 200UE 的 case（如果存在），不納入繪圖
+if 'UE_Count' in df.columns:
+    if (df['UE_Count'] == 200).any():
+        print("⚠️ Excluding 200UE case(s) from plots")
+        df = df[df['UE_Count'] != 200].reset_index(drop=True)
+else:
+    # 退而求其次，若 Scenario 欄位含有 '200' 或 '200ue'，也排除
+    if df['Scenario'].astype(str).str.contains('200', case=False).any():
+        print("⚠️ Excluding rows with '200' in Scenario from plots")
+        df = df[~df['Scenario'].astype(str).str.contains('200', case=False)].reset_index(drop=True)
+
 print("="*70)
 print("Generating ALL Separate Evaluation Plots (Including Original 4)")
 print("="*70)
@@ -432,12 +443,14 @@ for i in range(8):
     cell.set_facecolor('#3498db')
     cell.set_text_props(weight='bold', color='white')
 
-# 設置數據行顏色
+# 設置數據行顏色（依據實際列數動態處理）
 colors_table = ['#2ecc71', '#3498db', '#f39c12', '#e74c3c', '#c0392b']
-for i in range(1, 6):
+num_rows = len(table_data)
+for i in range(1, num_rows):
     for j in range(8):
         cell = table[(i, j)]
-        cell.set_facecolor(colors_table[i-1])
+        color_idx = (i - 1) % len(colors_table)
+        cell.set_facecolor(colors_table[color_idx])
         cell.set_alpha(0.2)
 
 plt.title('DNS Performance Statistics Summary', fontsize=16, fontweight='bold', pad=20)

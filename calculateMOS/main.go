@@ -33,8 +33,8 @@ func calculateMOS(csvFilePath string) {
 	stats := make([]rtcmos.Stat, 0, len(records)-1)
 
 	// 固定的VideoConfig參數
-	width := int32(1920)
-	height := int32(1080)
+	width := int32(1280)
+	height := int32(720)
 	expectFrameRate := float32(60)
 
 	for i := 1; i < len(records); i++ {
