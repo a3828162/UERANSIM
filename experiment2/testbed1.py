@@ -78,7 +78,7 @@ if __name__ == "__main__":
 
     # 啟動最多 6 個 UE
     threads = []
-    for i in range(min(6, len(df))):
+    for i in range(min(7, len(df))):
         row = df.iloc[i]
         ue_name = row['ue_id']
         arrival_time = row['t_arrive']
