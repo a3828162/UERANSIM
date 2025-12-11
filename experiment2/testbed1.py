@@ -22,8 +22,8 @@ def readCSV(csv_file):
     """讀取 trace CSV"""
     return pd.read_csv(csv_file)
 
-def task(ue_name, arrival_time, ue_ip):
-    print(f"[THREAD START] {ue_name} @ {arrival_time}s with IP {ue_ip}")
+def task(ue_name, arrival_time, watch_duration, ue_ip):
+    print(f"[THREAD START] {ue_name} @ {arrival_time}s with IP {ue_ip}, watch_duration={watch_duration}s")
     time.sleep(arrival_time)
 
     # 啟動 testbed1.sh
@@ -35,8 +35,9 @@ def task(ue_name, arrival_time, ue_ip):
     except Exception as e:
         print(f"[ERROR] {ue_name} failed to launch: {e}")
 
-    # 模擬運行 30 秒
-    time.sleep(250)
+    # 使用 CSV 中的 watch_s 作為持續時間
+    print(f"[{ue_name}] Running for {watch_duration} seconds...")
+    time.sleep(watch_duration+10)
     print(f"[{ue_name}] Starting termination and cleanup.")
 
     # 呼叫 delete_server_ue.sh
@@ -78,12 +79,23 @@ if __name__ == "__main__":
 
     # 啟動最多 6 個 UE
     threads = []
-    for i in range(min(7, len(df))):
+    # for i in range(min(7, len(df))):
+    #     row = df.iloc[i]
+    #     ue_name = row['ue_id']
+    #     arrival_time = row['t_arrive']
+    #     watch_duration = row['watch_s']  # 從 CSV 讀取持續時間
+    #     ue_ip = uesimtun_ips[i % len(uesimtun_ips)]
+    #     t = threading.Thread(target=task, args=(ue_name, arrival_time, watch_duration, ue_ip))
+    #     threads.append(t)
+    #     t.start()
+
+    for i in range(max(0, len(df))):
         row = df.iloc[i]
         ue_name = row['ue_id']
         arrival_time = row['t_arrive']
+        watch_duration = row['watch_s']  # 從 CSV 讀取持續時間
         ue_ip = uesimtun_ips[i % len(uesimtun_ips)]
-        t = threading.Thread(target=task, args=(ue_name, arrival_time, ue_ip))
+        t = threading.Thread(target=task, args=(ue_name, arrival_time, watch_duration, ue_ip))
         threads.append(t)
         t.start()
 

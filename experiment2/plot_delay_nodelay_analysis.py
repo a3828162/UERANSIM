@@ -19,11 +19,29 @@ plt.rcParams['axes.unicode_minus'] = False
 sns.set_style("whitegrid")
 sns.set_palette("husl")
 
+# 方法顏色和標記定義
+METHOD_COLORS = {
+    'Random': '#FF6B6B', 
+    'RoundRobin': '#4ECDC4', 
+    'LLM': '#95E1D3', 
+    'ShortestPath': '#FFD93D',
+    'SmallestDelay': '#A8E6CF'
+}
+
+METHOD_MARKERS = {
+    'Random': 'o', 
+    'RoundRobin': 's', 
+    'LLM': '^', 
+    'ShortestPath': 'D',
+    'SmallestDelay': 'v'
+}
+
 class ConditionAnalyzer:
-    def __init__(self, base_dir="/home/ubuntu/UERANSIM/experiment2", condition="nodelay"):
+    def __init__(self, base_dir="/home/ubuntu/UERANSIM/experiment2", condition="nodelay", exclude_methods=None):
         self.base_dir = Path(base_dir)
         self.condition = condition  # 'delay' or 'nodelay'
         self.condition_dir = self.base_dir / condition
+        self.exclude_methods = exclude_methods or []  # 要排除的方法列表
         
         # 創建輸出資料夾
         self.output_dir = Path("/home/ubuntu/UERANSIM/experiment2/plots") / condition
@@ -67,6 +85,11 @@ class ConditionAnalyzer:
                             if method is None:
                                 continue
                             
+                            # 檢查是否要排除此方法
+                            if method in self.exclude_methods:
+                                print(f"  ⊝ Resource-Satisfied (6UE) - {method}: 已排除")
+                                continue
+                            
                             df = pd.read_csv(csv_file)
                             self.data_6ue[method] = df
                             print(f"  ✓ Resource-Satisfied (6UE) - {method}: {len(df)} rows")
@@ -88,6 +111,11 @@ class ConditionAnalyzer:
                             if method is None:
                                 continue
                             
+                            # 檢查是否要排除此方法
+                            if method in self.exclude_methods:
+                                print(f"  ⊝ Resource-Overloaded (7UE) - {method}: 已排除")
+                                continue
+                            
                             df = pd.read_csv(csv_file)
                             self.data_7ue[method] = df
                             print(f"  ✓ Resource-Overloaded (7UE) - {method}: {len(df)} rows")
@@ -100,12 +128,24 @@ class ConditionAnalyzer:
     def _extract_method_name(self, dirname):
         """從資料夾名稱提取方法名稱"""
         dirname_lower = dirname.lower()
-        if 'random' in dirname_lower:
+        # 支援簡短前綴 (ld_, llm_, rd_, rr_, sp_)
+        if dirname_lower.startswith('ld_'):
+            return 'SmallestDelay'
+        elif dirname_lower.startswith('llm_'):
+            return 'LLM'
+        elif dirname_lower.startswith('rd_'):
+            return 'Random'
+        elif dirname_lower.startswith('rr_'):
+            return 'RoundRobin'
+        elif dirname_lower.startswith('sp_'):
+            return 'ShortestPath'
+        # 支援完整方法名稱 (lowestdelay, smallestdelay, random, roundrobin, shortestpath)
+        elif 'lowestdelay' in dirname_lower or 'smallestdelay' in dirname_lower:
+            return 'SmallestDelay'
+        elif 'random' in dirname_lower:
             return 'Random'
         elif 'roundrobin' in dirname_lower:
             return 'RoundRobin'
-        elif 'llm' in dirname_lower:
-            return 'LLM'
         elif 'shortestpath' in dirname_lower:
             return 'ShortestPath'
         else:
@@ -137,13 +177,11 @@ class ConditionAnalyzer:
         x = np.arange(len(methods))
         width = 0.6
         
-        colors = {'Random': '#FF6B6B', 'RoundRobin': '#4ECDC4', 'LLM': '#95E1D3', 'ShortestPath': '#FFD93D'}
-        
         for idx, (metric, label) in enumerate(zip(metrics, metric_labels)):
             ax = axes[idx // 2, idx % 2]
             
             values = [overall_data[method][metric] for method in methods]
-            bars = ax.bar(x, values, width, color=[colors.get(m, '#999') for m in methods])
+            bars = ax.bar(x, values, width, color=[METHOD_COLORS.get(m, '#999') for m in methods])
             
             # 數值標籤
             for bar, val in zip(bars, values):
@@ -196,7 +234,6 @@ class ConditionAnalyzer:
         methods = sorted(data.keys())
         metrics = ['MOS', 'FPS', 'RTT']
         titles = ['MOS Distribution', 'FPS Distribution', 'RTT Distribution (ms)']
-        colors = {'Random': '#FF6B6B', 'RoundRobin': '#4ECDC4', 'LLM': '#95E1D3', 'ShortestPath': '#FFD93D'}
         
         for idx, (metric, title) in enumerate(zip(metrics, titles)):
             ax = axes[idx]
@@ -211,14 +248,14 @@ class ConditionAnalyzer:
             
             # 上色
             for patch, method in zip(bp['boxes'], methods):
-                patch.set_facecolor(colors.get(method, '#999'))
+                patch.set_facecolor(METHOD_COLORS.get(method, '#999'))
                 patch.set_alpha(0.6)
             
             # 疊加散點圖
             for i, method in enumerate(methods, 1):
                 method_data = df_plot[df_plot['Method'] == method][metric].values
                 x = np.random.normal(i, 0.04, size=len(method_data))
-                ax.scatter(x, method_data, alpha=0.5, s=50, color=colors.get(method, '#999'))
+                ax.scatter(x, method_data, alpha=0.5, s=50, color=METHOD_COLORS.get(method, '#999'))
             
             ax.set_ylabel(metric, fontsize=11, fontweight='bold')
             ax.set_title(title, fontsize=12, fontweight='bold')
@@ -266,13 +303,11 @@ class ConditionAnalyzer:
         
         fig, ax = plt.subplots(figsize=(10, 10), subplot_kw=dict(projection='polar'))
         
-        colors = {'Random': '#FF6B6B', 'RoundRobin': '#4ECDC4', 'LLM': '#95E1D3', 'ShortestPath': '#FFD93D'}
-        
         for method, values in normalized.items():
             values += values[:1]
             ax.plot(angles, values, 'o-', linewidth=2, label=method, 
-                   color=colors.get(method, '#999'))
-            ax.fill(angles, values, alpha=0.15, color=colors.get(method, '#999'))
+                   color=METHOD_COLORS.get(method, '#999'))
+            ax.fill(angles, values, alpha=0.15, color=METHOD_COLORS.get(method, '#999'))
         
         ax.set_xticks(angles[:-1])
         ax.set_xticklabels(labels, fontsize=11)
@@ -360,9 +395,6 @@ class ConditionAnalyzer:
         fig.suptitle(f'{self.condition.upper()} - Scalability Analysis', 
                     fontsize=16, fontweight='bold')
         
-        colors = {'Random': '#FF6B6B', 'RoundRobin': '#4ECDC4', 'LLM': '#95E1D3', 'ShortestPath': '#FFD93D'}
-        markers = {'Random': 'o', 'RoundRobin': 's', 'LLM': '^', 'ShortestPath': 'D'}
-        
         metrics = ['MOS', 'Avg_FPS', 'Avg_Bitrate_kbps']
         titles = ['MOS Scalability', 'FPS Scalability', 'Bitrate Scalability']
         ylabels = ['MOS', 'FPS', 'Bitrate (kbps)']
@@ -380,9 +412,9 @@ class ConditionAnalyzer:
                         values.append(None)
                 
                 if None not in values:
-                    ax.plot(scenarios, values, marker=markers.get(method, 'o'), 
+                    ax.plot(scenarios, values, marker=METHOD_MARKERS.get(method, 'o'), 
                            linewidth=2.5, markersize=10, label=method,
-                           color=colors.get(method, '#999'))
+                           color=METHOD_COLORS.get(method, '#999'))
                     
                     # 顯示數值
                     for x, y in zip(scenarios, values):
@@ -424,8 +456,6 @@ class ConditionAnalyzer:
         fig.suptitle(f'{self.condition.upper()} - Performance Change: Overloaded - Satisfied (Δ)', 
                     fontsize=16, fontweight='bold')
         
-        colors = {'Random': '#FF6B6B', 'RoundRobin': '#4ECDC4', 'LLM': '#95E1D3', 'ShortestPath': '#FFD93D'}
-        
         for idx, (metric, title) in enumerate([('MOS', 'Δ MOS'), 
                                                ('FPS', 'Δ FPS'), 
                                                ('Bitrate', 'Δ Bitrate (kbps)')]):
@@ -435,7 +465,7 @@ class ConditionAnalyzer:
             values = list(deltas[metric].values())
             x = np.arange(len(methods_with_data))
             
-            bars = ax.bar(x, values, color=[colors.get(m, '#999') for m in methods_with_data], alpha=0.7)
+            bars = ax.bar(x, values, color=[METHOD_COLORS.get(m, '#999') for m in methods_with_data], alpha=0.7)
             
             # 數值標籤
             for bar, val in zip(bars, values):
@@ -616,9 +646,57 @@ class ConditionAnalyzer:
         print()
 
 def main():
-    # 分別處理 delay 和 nodelay
-    for condition in ['delay', 'nodelay']:
-        analyzer = ConditionAnalyzer(condition=condition)
+    import argparse
+    
+    parser = argparse.ArgumentParser(
+        description='分析 experiment2 的 delay/nodelay 實驗數據並生成視覺化圖表',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+範例:
+  # 分析所有方法 (delay 和 nodelay)
+  python3 plot_delay_nodelay_analysis.py
+  
+  # 只分析 delay 數據
+  python3 plot_delay_nodelay_analysis.py --condition delay
+  
+  # 排除 ShortestPath 方法
+  python3 plot_delay_nodelay_analysis.py --exclude ShortestPath
+  
+  # 排除多個方法
+  python3 plot_delay_nodelay_analysis.py --exclude ShortestPath Random --condition nodelay
+        """
+    )
+    
+    parser.add_argument(
+        '--exclude',
+        nargs='+',
+        choices=['Random', 'RoundRobin', 'LLM', 'ShortestPath', 'SmallestDelay'],
+        default=[],
+        help='要排除的方法 (可指定多個)'
+    )
+    
+    parser.add_argument(
+        '--condition',
+        choices=['delay', 'nodelay', 'both'],
+        default='both',
+        help='要分析的條件: delay, nodelay, 或 both (預設: both)'
+    )
+    
+    args = parser.parse_args()
+    
+    # 決定要處理的條件
+    if args.condition == 'both':
+        conditions = ['delay', 'nodelay']
+    else:
+        conditions = [args.condition]
+    
+    # 顯示排除的方法
+    if args.exclude:
+        print(f"\n⚠️  將排除以下方法: {', '.join(args.exclude)}\n")
+    
+    # 分別處理每個條件
+    for condition in conditions:
+        analyzer = ConditionAnalyzer(condition=condition, exclude_methods=args.exclude)
         analyzer.load_data()
         analyzer.generate_all_plots()
         print("\n" + "="*70 + "\n")

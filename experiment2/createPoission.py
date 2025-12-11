@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
     out_path, events = generate_single_trace(
         seed=seed,
-        lam=0.025,
+        lam=0.02,
         watch_s_fixed=240,
         duration_s=15*60,
         filename=f"trace_seed{seed}.csv"

@@ -1,0 +1,4 @@
+bitrate,packetlost,jitter,rtt,framespersecond,timestamp,server,size
+386.82,0,2,6.33,62,1764507347687.944,edge3,1
+657.75,0,1,5.5,60,1764507348687.674,edge3,1
+641.43,0,1,5.8,60,1764507349688.094,edge3,1
