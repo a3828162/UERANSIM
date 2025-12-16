@@ -22,20 +22,22 @@ def readCSV(csv_file):
     """讀取 trace CSV"""
     return pd.read_csv(csv_file)
 
-def task(ue_name, arrival_time, ue_ip):
-    print(f"[THREAD START] {ue_name} @ {arrival_time}s with IP {ue_ip}")
+def task(ue_name, arrival_time, watch_duration, ue_ip):
+    print(f"[THREAD START] {ue_name} @ {arrival_time}s with IP {ue_ip}, watch_duration={watch_duration}s")
     time.sleep(arrival_time)
 
-    # 啟動 testbed1.sh
-    command = f"./testbed1.sh {ue_name} {ue_ip}"
+    # 啟動 testbed1.sh，傳入 watch_duration 作為參數
+    command = f"./testbed1.sh {ue_name} {ue_ip} {watch_duration}"
     print(f"[EXEC] {command}")
     try:
-        subprocess.Popen(command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        print(f"[{ue_name}] launched successfully.")
+        # subprocess.Popen(command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        # print(f"[{ue_name}] launched successfully.")
+        result = subprocess.run(command, shell=True, capture_output=True, text=True)
+        print(f"[{ue_name}] Run output: {result.stdout.strip()}")
     except Exception as e:
         print(f"[ERROR] {ue_name} failed to launch: {e}")
 
-    time.sleep(241)
+    # time.sleep(241)
 
     print(f"[THREAD END] {ue_name}")
 
@@ -58,12 +60,13 @@ if __name__ == "__main__":
 
     # 啟動最多 20 個 UE
     threads = []
-    for i in range(min(20, len(df))):
+    for i in range(max(0, len(df))):
         row = df.iloc[i]
         ue_name = row['ue_id']
         arrival_time = row['t_arrive']
+        watch_duration = row['watch_s']  # 從 CSV 讀取 watch_s
         ue_ip = uesimtun_ips[i % len(uesimtun_ips)]
-        t = threading.Thread(target=task, args=(ue_name, arrival_time, ue_ip))
+        t = threading.Thread(target=task, args=(ue_name, arrival_time, watch_duration, ue_ip))
         threads.append(t)
         t.start()
 
