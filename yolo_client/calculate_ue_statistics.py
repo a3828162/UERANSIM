@@ -108,11 +108,11 @@ def main():
     
     print("-" * 95)
     
-    # 計算全部 UE 的平均
+    # 計算全部 UE 的平均（簡單平均：每個 UE 等權重）
     overall_avg = {
-        'bitrate': sum(all_data['bitrate']) / len(all_data['bitrate']) if all_data['bitrate'] else 0,
-        'rtt': sum(all_data['rtt']) / len(all_data['rtt']) if all_data['rtt'] else 0,
-        'packetlost': sum(all_data['packetlost']) / len(all_data['packetlost']) if all_data['packetlost'] else 0,
+        'bitrate': sum(stats['bitrate'] for stats in ue_stats.values()) / len(ue_stats) if ue_stats else 0,
+        'rtt': sum(stats['rtt'] for stats in ue_stats.values()) / len(ue_stats) if ue_stats else 0,
+        'packetlost': sum(stats['packetlost'] for stats in ue_stats.values()) / len(ue_stats) if ue_stats else 0,
         'total_samples': len(all_data['bitrate'])
     }
     

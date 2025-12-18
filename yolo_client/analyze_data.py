@@ -24,6 +24,7 @@ METHOD_NAMES = {
 # 預設數據路徑
 DEFAULT_DATA_DIR = "/home/ubuntu/UERANSIM/yolo_client/delay"
 DATA_DIR = DEFAULT_DATA_DIR
+EXCLUDE_METHODS = []  # 要排除的方法列表，例如 ['Shortest Path', 'SD']
 
 def extract_method_from_folder(folder_name):
     """從資料夾名稱提取方法名稱（_前面的部分）"""
@@ -35,7 +36,7 @@ def extract_method_from_folder(folder_name):
     return folder_name
 
 def collect_rtt_data():
-    """收集只有RTT的數據（從performance或trace CSV）"""
+    """收集只有RTT的數據（簡單平均：每個UE等權重）"""
     data = {
         'scenario': [],
         'method': [],
@@ -70,11 +71,27 @@ def collect_rtt_data():
             # 提取方法名稱
             method = extract_method_from_folder(method_folder)
             
-            # 查找 performance CSV 或其他包含RTT的CSV
-            rtt_values = []
+            # 優先查找 ue_statistics_summary.csv（使用簡單平均）
+            summary_csv = os.path.join(method_path, 'ue_statistics_summary.csv')
+            if os.path.exists(summary_csv):
+                try:
+                    df = pd.read_csv(summary_csv)
+                    overall = df[df['UE_ID'] == 'OVERALL']
+                    if not overall.empty:
+                        avg_rtt = overall['Avg_RTT_ms'].values[0]
+                        data['scenario'].append(scenario_display)
+                        data['method'].append(method)
+                        data['rtt'].append(avg_rtt)
+                        print(f"✓ Loaded: scenario={scenario_display}, method={method}, avg_rtt={avg_rtt:.2f}ms (from summary)")
+                        continue
+                except Exception as e:
+                    pass
+            
+            # 如果沒有 summary CSV，則從 performance_ue*.csv 計算（簡單平均各UE）
+            rtt_values_by_ue = []
             
             for filename in os.listdir(method_path):
-                if filename.endswith('.csv'):
+                if filename.startswith('performance_ue') and filename.endswith('.csv'):
                     csv_file = os.path.join(method_path, filename)
                     
                     try:
@@ -82,24 +99,20 @@ def collect_rtt_data():
                         
                         # 檢查是否有 rtt 列
                         if 'rtt' in df.columns:
-                            rtt_values.extend(df['rtt'].dropna().tolist())
-                        elif 'RTT' in df.columns:
-                            rtt_values.extend(df['RTT'].dropna().tolist())
-                        elif 'Avg_RTT_ms' in df.columns:
-                            # ue_statistics_summary.csv 格式
-                            overall = df[df['UE_ID'] == 'OVERALL']
-                            if not overall.empty:
-                                rtt_values.append(overall['Avg_RTT_ms'].values[0])
+                            ue_rtt_values = df['rtt'].dropna().tolist()
+                            if ue_rtt_values:
+                                ue_avg_rtt = np.mean(ue_rtt_values)
+                                rtt_values_by_ue.append(ue_avg_rtt)
                     except Exception as e:
                         pass
             
-            # 計算平均RTT
-            if rtt_values:
-                avg_rtt = np.mean(rtt_values)
+            # 計算簡單平均（每個UE等權重）
+            if rtt_values_by_ue:
+                avg_rtt = np.mean(rtt_values_by_ue)
                 data['scenario'].append(scenario_display)
                 data['method'].append(method)
                 data['rtt'].append(avg_rtt)
-                print(f"✓ Loaded: scenario={scenario_display}, method={method}, avg_rtt={avg_rtt:.2f}ms")
+                print(f"✓ Loaded: scenario={scenario_display}, method={method}, avg_rtt={avg_rtt:.2f}ms (simple avg)")
             else:
                 print(f"✗ No RTT data found in {method_folder}")
     
@@ -198,12 +211,30 @@ def main():
             print(f"✗ Error: Directory not found: {DATA_DIR}")
             sys.exit(1)
     
+    # 解析排除方法參數（--exclude method1,method2）
+    exclude_methods_str = None
+    if len(sys.argv) > 2 and sys.argv[2].startswith('--exclude'):
+        if '=' in sys.argv[2]:
+            exclude_methods_str = sys.argv[2].split('=', 1)[1]
+        elif len(sys.argv) > 3:
+            exclude_methods_str = sys.argv[3]
+    
+    if exclude_methods_str:
+        global EXCLUDE_METHODS
+        EXCLUDE_METHODS = [m.strip() for m in exclude_methods_str.split(',')]
+        print(f"Excluding methods: {', '.join(EXCLUDE_METHODS)}")
+    
     print("=" * 60)
     print(f"Loading RTT data from: {DATA_DIR}")
     print("=" * 60)
     
     # 收集RTT數據
     df = collect_rtt_data()
+    
+    # 排除指定的方法
+    if EXCLUDE_METHODS:
+        df = df[~df['method'].isin(EXCLUDE_METHODS)]
+        print(f"\n✓ Excluded methods: {', '.join(EXCLUDE_METHODS)}")
     
     print("\n" + "=" * 60)
     print(f"Total records loaded: {len(df)}")

@@ -24,6 +24,7 @@ METHOD_NAMES = {
 # 預設數據路徑
 DEFAULT_DATA_DIR = "/home/ubuntu/UERANSIM/experiment2/delay_new1"
 DATA_DIR = DEFAULT_DATA_DIR
+EXCLUDE_METHODS = []  # 要排除的方法列表，例如 ['Shortest Path', 'SD']
 
 def extract_method_from_folder(folder_name):
     """從資料夾名稱提取方法名稱（_前面的部分）"""
@@ -195,12 +196,30 @@ def main():
             print(f"✗ Error: Directory not found: {DATA_DIR}")
             sys.exit(1)
     
+    # 解析排除方法參數（--exclude method1,method2）
+    exclude_methods_str = None
+    if len(sys.argv) > 2 and sys.argv[2].startswith('--exclude'):
+        if '=' in sys.argv[2]:
+            exclude_methods_str = sys.argv[2].split('=', 1)[1]
+        elif len(sys.argv) > 3:
+            exclude_methods_str = sys.argv[3]
+    
+    if exclude_methods_str:
+        global EXCLUDE_METHODS
+        EXCLUDE_METHODS = [m.strip() for m in exclude_methods_str.split(',')]
+        print(f"Excluding methods: {', '.join(EXCLUDE_METHODS)}")
+    
     print("=" * 60)
     print(f"Loading data from: {DATA_DIR}")
     print("=" * 60)
     
     # 收集數據
     df = collect_data()
+    
+    # 排除指定的方法
+    if EXCLUDE_METHODS:
+        df = df[~df['method'].isin(EXCLUDE_METHODS)]
+        print(f"\n✓ Excluded methods: {', '.join(EXCLUDE_METHODS)}")
     
     print("\n" + "=" * 60)
     print(f"Total records loaded: {len(df)}")
