@@ -1,0 +1,3 @@
+UE_ID,Edge,Avg_Bitrate_kbps,Avg_RTT_ms,Avg_PacketLost,Samples
+UE1,edge1,12917.16,36.62,0.00,60
+OVERALL,,12917.16,36.62,0.00,60
