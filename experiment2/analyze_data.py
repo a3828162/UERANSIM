@@ -163,9 +163,14 @@ def plot_metrics(df):
         ax.set_title(f'{metric_title} Performance Comparison', fontsize=15, fontweight='bold', color='#333333', pad=20)
         ax.set_xticks(x_positions)
         ax.set_xticklabels([f'p{s}' for s in scenarios], fontsize=12)
-        
-        # 改進圖例和網格
-        ax.legend(loc='best', fontsize=11, framealpha=0.98, edgecolor='#CCCCCC', fancybox=True, shadow=True)
+                # 拓高 Y 轴上限，为 legend 留出空间
+        y_max = ax.get_ylim()[1]
+        ax.set_ylim(top=y_max * 1.15)
+                # 改进图例和网格 - 将Method标记放在上方，不遮挡任何内容
+        legend = ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05), fontsize=11, framealpha=0.92, 
+                          edgecolor='#999999', fancybox=False, shadow=False, frameon=True, ncol=4)
+        legend.get_frame().set_facecolor('white')
+        legend.get_frame().set_linewidth(1.5)
         ax.grid(True, alpha=0.25, axis='y', linestyle='--', linewidth=0.8, color='#CCCCCC')
         ax.set_axisbelow(True)
         
@@ -184,6 +189,105 @@ def plot_metrics(df):
         plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none')
         print(f"✓ Figure saved to: {output_path}")
         plt.close()
+
+def plot_combined_metrics(df):
+    """繪製合併四張圖：2x2佈局 (左上BPS, 右上FPS, 左下MOS, 右下RTT)"""
+    
+    if df.empty:
+        print("No data to plot!")
+        return
+    
+    # 確保plot資料夾存在
+    plot_dir = "/home/ubuntu/UERANSIM/experiment2/plot"
+    os.makedirs(plot_dir, exist_ok=True)
+    
+    # 設置顏色和樣式
+    methods = sorted(df['method'].unique())
+    scenarios = sorted(df['scenario'].unique(), key=lambda x: int(x))
+    
+    # 使用相同的配色方案
+    academic_colors = [
+        '#2E86AB',  # 深藍
+        '#A23B72',  # 深紫紅
+        '#F18F01',  # 金橙
+        '#C73E1D',  # 深紅
+        '#6A994E',  # 深綠
+        '#BC4749',  # 酒紅
+        '#8B5A5A'   # 棕色
+    ]
+    method_colors = {method: academic_colors[i % len(academic_colors)] for i, method in enumerate(methods)}
+    
+    # 定義指標：(資料欄名, y軸標籤, 標題, 位置)
+    metrics = [
+        ('bitrate', 'Bitrate (kbps)', 'Bitrate (BPS)', 0),  # 左上 (0,0)
+        ('fps', 'FPS', 'FPS', 1),                            # 右上 (0,1)
+        ('mos', 'MOS', 'MOS', 2),                            # 左下 (1,0)
+        ('rtt', 'RTT (ms)', 'RTT', 3)                        # 右下 (1,1)
+    ]
+    
+    # 創建2x2子圖
+    fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+    fig.suptitle('Performance Metrics Comparison', fontsize=18, fontweight='bold', color='#333333', y=0.995)
+    
+    # 準備數據
+    x_positions = np.arange(len(scenarios))
+    bar_width = 0.15
+    
+    # 為每個指標繪製柱狀圖
+    for metric_col, metric_label, metric_title, pos in metrics:
+        # 根據位置轉換成行列索引
+        row = pos // 2
+        col = pos % 2
+        ax = axes[row, col]
+        
+        # 為每個方法繪製柱狀圖
+        for i, method in enumerate(methods):
+            values = []
+            for scenario in scenarios:
+                data = df[(df['scenario'] == scenario) & (df['method'] == method)]
+                if not data.empty:
+                    values.append(data[metric_col].values[0])
+                else:
+                    values.append(0)
+            
+            offset = (i - len(methods)/2 + 0.5) * bar_width
+            ax.bar(x_positions + offset, values, bar_width, 
+                   label=method, color=method_colors[method], edgecolor='#333333', linewidth=1.2, alpha=0.85)
+        
+        # 設置軸標籤和標題
+        ax.set_xlabel('Scenario', fontsize=12, fontweight='bold', color='#333333')
+        ax.set_ylabel(metric_label, fontsize=12, fontweight='bold', color='#333333')
+        ax.set_title(metric_title, fontsize=13, fontweight='bold', color='#333333', pad=15)
+        ax.set_xticks(x_positions)
+        ax.set_xticklabels([f'p{s}' for s in scenarios], fontsize=11)
+                # 拓高 Y 轴上限，为 legend 留出空间
+        y_max = ax.get_ylim()[1]
+        ax.set_ylim(top=y_max * 1.15)
+                # 设置图例 - 将Method标记放在上方，不遮挡任何内容
+        legend = ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05), fontsize=10, framealpha=0.92, 
+                          edgecolor='#999999', fancybox=False, shadow=False, frameon=True, ncol=3)
+        legend.get_frame().set_facecolor('white')
+        legend.get_frame().set_linewidth(1.5)
+        
+        # 設置網格
+        ax.grid(True, alpha=0.25, axis='y', linestyle='--', linewidth=0.8, color='#CCCCCC')
+        ax.set_axisbelow(True)
+        
+        # 設置背景色和邊框
+        ax.set_facecolor('#FAFAFA')
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.spines['left'].set_color('#CCCCCC')
+        ax.spines['bottom'].set_color('#CCCCCC')
+    
+    # 調整子圖之間的間距
+    plt.tight_layout(rect=[0, 0, 1, 0.99])
+    
+    # 保存合併圖表
+    output_path = os.path.join(plot_dir, 'combined_comparison.png')
+    plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none')
+    print(f"✓ Combined figure saved to: {output_path}")
+    plt.close()
 
 def main():
     global DATA_DIR
@@ -232,6 +336,7 @@ def main():
     print("Generating plots...")
     print("=" * 60)
     plot_metrics(df)
+    plot_combined_metrics(df)
 
 if __name__ == "__main__":
     main()
